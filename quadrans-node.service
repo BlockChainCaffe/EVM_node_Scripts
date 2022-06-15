@@ -1,0 +1,17 @@
+Description=Quadrans Node Service
+After=network.target
+
+[Service]
+Type=simple
+User=quadrans
+WorkingDirectory=/home/quadrans
+#EnvironmentFile=/home/quadrans/environment
+ExecStart=/home/quadrans/gqdc.sh
+Restart=on-failure
+RestartSec=60
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=QuadransNode
+
+[Install]
+WantedBy=default.target
