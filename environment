@@ -5,5 +5,5 @@ export MINER_PASSWORD=
 
 export GETH_PARAMS='--cache 1024 --maxpeers 50  \
 --ws --wsaddr "localhost" --wsport "8546" --wsorigins "*" --wsapi="db,eth,net,web3,personal,web3,txpool" \
---rpc --rpcaddr "0.0.0.0" --rpccorsdomain "*" --rpcapi="db,eth,net,web3,personal,web3,txpool" \
+--rpc --rpcaddr "0.0.0.0" --rpccorsdomain "*" --rpcvhosts="*" --rpcapi="db,eth,net,web3,personal,web3,txpool" \
 --allow-insecure-unlock'
